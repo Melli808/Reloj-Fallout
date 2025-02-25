@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pip-Boy Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="retro-clock">
+        <div class="pip-boy-frame">
+            <div class="crt-effect"></div>
+            <div class="screen">
+                <div class="top-bar">
+                    <h1>PIP-BOY</h1>
+                    <img src="imagenes/vault_boy.gif" alt="Vault Boy" class="vault-boy">
+                </div>
+                <div class="clock-display">
+                    <div id="time">00:00:00</div>
+                    <div id="date">1 de enero de 2025</div>
+                    <div id="moon-phase">LUNA: Nueva <span id="moon-icon"></span></div>
+                    <div id="rads">RADs: 0</div>
+                    <div id="condition">CONDICIÓN: OK</div>
+                </div>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button class="retro-btn" id="prev-month" aria-label="Mes anterior" role="button">◄</button>
+                        <span id="month-year">Enero 2025</span>
+                        <button class="retro-btn" id="next-month" aria-label="Mes siguiente" role="button">►</button>
+                    </div>
+                    <table id="calendar-table">
+                        <thead>
+                            <tr>
+                                <th>DOM</th><th>LUN</th><th>MAR</th><th>MIÉ</th><th>JUE</th><th>VIE</th><th>SÁB</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body"></tbody>
+                    </table>
+                </div>
+                <div class="controls">
+                    <button class="retro-btn ToggleBtn" id="toggle-format" aria-label="Cambiar formato de hora" role="button">12H/24H</button>
+                    <button class="retro-btn ToggleBtn" id="toggle-color" aria-label="Cambiar color" role="button">COLOR</button>
+                    <button class="retro-btn ToggleBtn" id="toggle-sound" aria-label="Activar/Desactivar sonido" role="button">SONIDO</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <div class="signature"> 
+            </div>
+            <p>Hecho con &lt;3 por <span>Santiago Melgarejo</span></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
